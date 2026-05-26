@@ -66,7 +66,7 @@
       <div class="hey">Hey!</div>
       <div class="logo" tabindex="0" aria-label="vinod jangid logo">
         <div class="logo-top">
-          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar" />
+          <img src="src/png/nav-portfolio-icon.png" alt="animation-head" id="nav-portfolio-icon" />
         </div>
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
@@ -92,6 +92,12 @@
           <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#projects" aria-label="projects menu button">
               &#60;/Projects&#62;
+            </a>
+          </li>
+
+          <li class="contact" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
+            <a href="#footer" aria-label="contact menu button">
+              &#60;/Contact&#62;
             </a>
           </li>
         </ul>
@@ -136,6 +142,11 @@
             &#60;/Projects&#62;
           </a>
         </li>
+        <li id="contact-mobile-tab" class="mobile-navbar-tabs-li contact" onclick="hidemenubyli()">
+          <a href="#footer" tabindex="0" aria-label="contact menu button">
+            &#60;/Contact&#62;
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -176,36 +187,8 @@
           <p class="jello">.</p>
         </article>
 
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">I</p>
-          </div>
-          <div>
-            <p class="jello">b</p>
-            <p class="jello">u</p>
-            <p class="jello">i</p>
-            <p class="jello">l</p>
-            <p class="jello">d</p>
-          </div>
-          <div>
-            <p class="jello">A</p>
-            <p class="jello">I</p>
-          </div>
-          <div>
-            <p class="jello">s</p>
-            <p class="jello">o</p>
-            <p class="jello">l</p>
-            <p class="jello">u</p>
-            <p class="jello">t</p>
-            <p class="jello">i</p>
-            <p class="jello">o</p>
-            <p class="jello">n</p>
-            <p class="jello">s</p>
-            <p class="jello">.</p>
-          </div>
-        </article>
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          Data Science Student & AI/ML enthusiast.<br />
+          I'm a Data Science and AI/ML Student & DevOps enthusiast.<br />
           <br />
           Passionate about AI/ML and cloud computing solutions.
         </p>
@@ -238,6 +221,13 @@
 
       </div>
 
+      <div class="hero-visual" data-aos="fade-up" data-aos-delay="900">
+        <div class="hero-visual-glow"></div>
+        <div class="hero-visual-frame">
+          <img src="projects images/Sivaji_cropped.png" alt="Sivaji Donga" />
+        </div>
+      </div>
+
     </section>
 
     <section class="about-section-container" id="about" data-aos="fade-up">
@@ -257,15 +247,25 @@
             </p>
             <br />
             <p tabindex="0">
-              I have a good knowledge in Python, C, and Java, with familiarity in AI/ML and AWS services.
+              I have a good knowledge in Python with familiarity in AI/ML and AWS services.
             </p>
             <br />
             <p tabindex="0">
-              I enjoy solving complex problems and building practical applications, from image labeling pipelines to
-              disease detection models.
+            I enjoy solving real-world problems and building applications, from machine leanring to cloud workflows.
             </p>
 
-            <button class="resume-btn" id="resume-btn" onclick="openURL()">
+            <div style="margin-top: 20px;">
+              <p style="font-size: 1.8rem; font-weight: 600; color: var(--color-white); margin-bottom: 15px;">Resume</p>
+              <div style="display: flex; gap: 15px; align-items: center;">
+                <button class="resume-btn" id="preview-btn" onclick="previewResume()">
+                  <div class="sign">
+                    <svg viewBox="0 0 576 512">
+                      <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a96 96 0 1 0 96 96 96.11 96.11 0 0 0-96-96z" />
+                    </svg>
+                  </div>
+                  <div class="text">Preview</div>
+                </button>
+                <button class="resume-btn" id="resume-btn" onclick="openURL()">
               <div class="sign">
                 <svg viewBox="0 0 640 512">
                   <path
@@ -273,12 +273,17 @@
                 </svg>
               </div>
 
-              <div class="text">Resume</div>
+              <div class="text">Download</div>
             </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+
+    <!-- SKILLS SECTION -->
 
 
     <section class="skills-section-container" id="skills">
@@ -321,14 +326,29 @@
               <span class="tooltip">AWS</span>
             </li>
             <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/docker-moby.png" alt="docker skill" class="tech-stack-logo" />
+              <span class="tooltip">DOCKER</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/git.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/github-light.png" alt="github skill" class="tech-stack-logo" />
+              <span class="tooltip">GITHUB</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jenkins.png" alt="jenkins skill" class="tech-stack-logo" />
+              <span class="tooltip">JENKINS</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/prompt_engineer.png" alt="prompt engineering skill" class="tech-stack-logo" />
+              <span class="tooltip">PROMPT ENGINEERING</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
               <img src="./src/png/tensorflowlogo.png" alt="tensorflow skill" class="tech-stack-logo"
                 onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'" />
               <span class="tooltip">TENSORFLOW</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/javalogo.png" alt="Java skill" class="tech-stack-logo"
-                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'" />
-              <span class="tooltip">JAVA</span>
             </li>
             <li class="tech-stack-box" data-aos="fade-up">
               <img src="./src/png/mysqllogo.png" alt="mysql skill" class="tech-stack-logo"
@@ -348,15 +368,14 @@
               <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
               <span class="tooltip">CSS</span>
             </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
-              <span class="tooltip">JS</span>
-            </li>
+
 
           </ul>
         </div>
       </div>
     </section>
+
+    <!-- PROJECT SECTION -->
 
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
@@ -367,6 +386,37 @@
           <p class="sectionHeadingP"></p>
         </div>
         <div class="project-boxes-div">
+
+          <div class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <article class="ProjectHeading">Deep Learning based Mpox Classification and Outbreak Prediction</article>
+                <p class="ProjectDescription">
+                  Deep learning project for Mpox image classification and outbreak prediction to support earlier
+                  risk assessment and faster decision-making.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://www.linkedin.com/posts/sivaji-donga-732a13275_machinelearning-deeplearning-devops-ugcPost-7458209047394275329-NyV9/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEM_cVYBpcsEVLeLb-OTsyTGgjB7C3U6eLQ" target="_blank" class="cta" aria-label="Open Mpox demo link">
+                    <span>Demo</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/sivaji932/MPOX-Detection-and-Outbreak-Prediction.git" target="_blank" class="github-redirect" aria-label="Open Mpox GitHub link">
+                    <img src="./src/png/github-light.png" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div"
+                onclick="openLightbox('projects images/Deep Learning Based Predictive Modeling and Classisfication of MonkeyPox outbreak patterns.png')">
+                <span class="image-hint">Click to expand image</span>
+                <img src="projects images/Deep Learning Based Predictive Modeling and Classisfication of MonkeyPox outbreak patterns.png"
+                  alt="Deep Learning based Mpox Classification and Outbreak Prediction" />
+              </div>
+            </div>
+          </div>
+
           <div data-aos="fade-up" class="project-box-wrapper">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
@@ -383,6 +433,9 @@
                       <path d="M1,5 L11,5"></path>
                       <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
+                  </a>
+                  <a href="https://github.com/sivaji932/AWS-Lambda-Image-Annotation-with-Rekognition.git" target="_blank" class="github-redirect" aria-label="Open Automated Image Labeling Pipeline on AWS GitHub link">
+                    <img src="./src/png/github-light.png" alt="GitHub" />
                   </a>
                 </div>
               </div>
@@ -411,6 +464,9 @@
                       <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                   </a>
+                  <a href="https://github.com/sivaji932/Two-Phase-Transfer-Learning-for-Rice-Leaf-Disease-Detection.git" target="_blank" class="github-redirect" aria-label="Open Rice Leaf Disease Detection GitHub link">
+                    <img src="./src/png/github-light.png" alt="GitHub" />
+                  </a>
                 </div>
               </div>
               <div class="image-div"
@@ -422,50 +478,7 @@
             </div>
           </div>
 
-          <div class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <article class="ProjectHeading">Smart City Hub - Complaint Management System</article>
-                <p class="ProjectDescription">
-                  Complaint Management System using Django, Python and SQLite for municipal issue tracking.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://www.linkedin.com/posts/sivaji-donga-732a13275_python-django-sqlite-activity-7379035928964562944-0esT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEM_cVYBpcsEVLeLb-OTsyTGgjB7C3U6eLQ"
-                    target="_blank" class="cta" aria-label="Visit Live">
-                    <span>Video demo</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div"
-                onclick="openLightbox('projects images/Smart City Hub - Complaint Management System.png')">
-                <span class="image-hint">Click to expand image</span>
-                <img src="projects images/Smart City Hub - Complaint Management System.png"
-                  alt="Smart City Hub - Complaint Management System" />
-              </div>
-            </div>
-          </div>
 
-          <div class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <article class="ProjectHeading">Domain Specific RAG with Hospital Knowledge</article>
-                <p class="ProjectDescription">
-                  Hospital domain AI chatbot using Retrieval-Augmented Generation (RAG) and local LLM inference.
-                </p>
-
-              </div>
-              <div class="image-div"
-                onclick="openLightbox('projects images/Domain Specific RAG with Hospital Knowledge.png')">
-                <span class="image-hint">Click to expand image</span>
-                <img src="projects images/Domain Specific RAG with Hospital Knowledge.png"
-                  alt="Domain Specific RAG with Hospital Knowledge" />
-              </div>
-            </div>
-          </div>
 
         </div>
 
@@ -489,8 +502,8 @@
     <div class="footer-foreground">
       <div class="footercontainer">
         <div class="two-words">
-          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
-            "Learning, Living, and Leveling Up."
+          <article tabindex="0" aria-label="Learning, Living and Leveling Up, my quote">
+            Learning, Living and Leveling Up.
           </article>
         </div>
         <div class="social-media-container">
@@ -521,7 +534,7 @@
 
         <div class="footer-bottom">
           <article>
-            &#169; 2025
+            &#169; 2026
           </article>
           <article style="margin-left: 20px; font-size: 1.2rem; color: #b0b0b0;">
             Visitors: <span id="visitor-count">Loading...</span>
@@ -541,8 +554,12 @@
 
   <script>
     function openURL() {
-      var url = "src/docx/Resume_ready.docx";
+      var url = "src/pdf/SIVAJI Resume 1.pdf";
+      window.open(url, "_blank");
+    }
 
+    function previewResume() {
+      var url = "src/pdf/SIVAJI Resume 1.pdf";
       window.open(url, "_blank");
     }
   </script>
